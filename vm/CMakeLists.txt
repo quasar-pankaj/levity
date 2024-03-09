@@ -1,6 +1,6 @@
 add_executable(vm STATIC src/main.cpp)
 target_include_directories(vm PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
-target_link_libraries(common PRIVATE libcommon)
+target_link_libraries(vm PRIVATE common)
 
 # Assume the test executable is named "tests"
 add_executable(
