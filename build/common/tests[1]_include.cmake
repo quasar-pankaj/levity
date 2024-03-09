@@ -1,0 +1,5 @@
+if(EXISTS "/home/pankaj/Projects/CPP/levity/build/common/tests[1]_tests.cmake")
+  include("/home/pankaj/Projects/CPP/levity/build/common/tests[1]_tests.cmake")
+else()
+  add_test(tests_NOT_BUILT tests_NOT_BUILT)
+endif()
