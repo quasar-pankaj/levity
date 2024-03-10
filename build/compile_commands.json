@@ -26,6 +26,11 @@
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/vm.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/vm.cpp",
+  "file": "/home/pankaj/Projects/CPP/levity/common/src/vm.cpp"
+},
+{
+  "directory": "/home/pankaj/Projects/CPP/levity/build",
   "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o common/CMakeFiles/tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/common/test/test.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/test/test.cpp"
 }

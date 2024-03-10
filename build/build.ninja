@@ -1004,6 +1004,13 @@ build common/CMakeFiles/common.dir/src/loader.cpp.o: CXX_COMPILER__common_Debug 
   OBJECT_DIR = common/CMakeFiles/common.dir
   OBJECT_FILE_DIR = common/CMakeFiles/common.dir/src
 
+build common/CMakeFiles/common.dir/src/vm.cpp.o: CXX_COMPILER__common_Debug /home/pankaj/Projects/CPP/levity/common/src/vm.cpp || cmake_object_order_depends_target_common
+  DEP_FILE = common/CMakeFiles/common.dir/src/vm.cpp.o.d
+  FLAGS = -g -std=c++20
+  INCLUDES = -I/home/pankaj/Projects/CPP/levity/common/include
+  OBJECT_DIR = common/CMakeFiles/common.dir
+  OBJECT_FILE_DIR = common/CMakeFiles/common.dir/src
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target common
@@ -1012,7 +1019,7 @@ build common/CMakeFiles/common.dir/src/loader.cpp.o: CXX_COMPILER__common_Debug 
 #############################################
 # Link the static library common/libcommon.a
 
-build common/libcommon.a: CXX_STATIC_LIBRARY_LINKER__common_Debug common/CMakeFiles/common.dir/src/loader.cpp.o
+build common/libcommon.a: CXX_STATIC_LIBRARY_LINKER__common_Debug common/CMakeFiles/common.dir/src/loader.cpp.o common/CMakeFiles/common.dir/src/vm.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = common/CMakeFiles/common.dir
   POST_BUILD = :
