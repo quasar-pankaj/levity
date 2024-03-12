@@ -1,4 +1,4 @@
-#include "../include/vm.hpp"
+#include "vm.hpp"
 
 namespace common {
 

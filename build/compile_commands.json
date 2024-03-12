@@ -21,6 +21,11 @@
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/object.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/object.cpp",
+  "file": "/home/pankaj/Projects/CPP/levity/common/src/object.cpp"
+},
+{
+  "directory": "/home/pankaj/Projects/CPP/levity/build",
   "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/loader.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/loader.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/src/loader.cpp"
 },

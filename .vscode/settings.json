@@ -12,6 +12,9 @@
         "string_view": "cpp",
         "initializer_list": "cpp",
         "span": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "type_traits": "cpp",
+        "future": "cpp",
+        "new": "cpp"
     }
 }
