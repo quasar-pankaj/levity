@@ -259,7 +259,7 @@ Object* TypedObject<T>::performOperation(const Object* rhs,
 }
 
 template <typename T>
-Object* TypedObject<T>::operator+(const Object* rhs) {
+Object* TypedObject<T>::add(const Object* rhs) {
   Object* result;
   result = performOperation<double>(rhs, add<double>);
   if (result) return result;
@@ -272,7 +272,7 @@ Object* TypedObject<T>::operator+(const Object* rhs) {
   return performOperation(rhs, add<T>);
 }
 template <typename T>
-Object* TypedObject<T>::operator-(const Object* rhs) {
+Object* TypedObject<T>::subtract(const Object* rhs) {
   Object* result;
   result = performOperation<double>(rhs, sub<double>);
   if (result) return result;
@@ -285,7 +285,7 @@ Object* TypedObject<T>::operator-(const Object* rhs) {
   return performOperation(rhs, sub<T>);
 }
 template <typename T>
-Object* TypedObject<T>::operator*(const Object* rhs) {
+Object* TypedObject<T>::multiply(const Object* rhs) {
   Object* result;
   result = performOperation<double>(rhs, mul<double>);
   if (result) return result;
@@ -298,7 +298,7 @@ Object* TypedObject<T>::operator*(const Object* rhs) {
   return performOperation(rhs, mul<T>);
 }
 template <typename T>
-Object* TypedObject<T>::operator/(const Object* rhs) {
+Object* TypedObject<T>::divide(const Object* rhs) {
   Object* result;
   result = performOperation<double>(rhs, div<double>);
   if (result) return result;
@@ -311,7 +311,7 @@ Object* TypedObject<T>::operator/(const Object* rhs) {
   return performOperation(rhs, div<T>);
 }
 template <typename T>
-Object* TypedObject<T>::operator%(const Object* rhs) {
+Object* TypedObject<T>::modulus(const Object* rhs) {
   Object* result;
   result = performOperation<double>(rhs, mod<double>);
   if (result) return result;

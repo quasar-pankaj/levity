@@ -25,11 +25,15 @@ class VM {
     return object;
   }
 
+  void halt() { isRunning = false; }
+
  protected:
   std::vector<Instruction*> instructions;
   std::stack<Object*> ds;                  // Data stack
   std::stack<int> rs;                      // Return stack
   std::vector<Instruction*>::iterator ip;  // Instruction pointer
+  bool isRunning = true;
+  
 };
 
 }  // namespace common

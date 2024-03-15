@@ -3,7 +3,7 @@
 namespace common {
 
 void VM::run() {
-  for (auto ip = instructions.begin(); ip != instructions.end(); ip++) {
+  for (auto ip = instructions.begin(); ip != instructions.end() && isRunning; ip++) {
     (*ip)->execute(*this);
   }
 }

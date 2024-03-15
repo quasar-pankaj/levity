@@ -22,11 +22,11 @@ class Object : public Instruction {
 
   ObjectType getType() const { return type_; }
 
-  virtual Object* operator+(const Object* rhs) = 0;
-  virtual Object* operator-(const Object* rhs) = 0;
-  virtual Object* operator*(const Object* rhs) = 0;
-  virtual Object* operator/(const Object* rhs) = 0;
-  virtual Object* operator%(const Object* rhs) = 0;
+  virtual Object* add(const Object* rhs) = 0;
+  virtual Object* subtract(const Object* rhs) = 0;
+  virtual Object* multiply(const Object* rhs) = 0;
+  virtual Object* divide(const Object* rhs) = 0;
+  virtual Object* modulus(const Object* rhs) = 0;
 
  protected:
   void setType(ObjectType type) { type_ = type; }

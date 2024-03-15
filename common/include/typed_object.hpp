@@ -15,11 +15,11 @@ class TypedObject : public Object {
 
   virtual std::string toString() const { return std::to_string(holder.value_); }
 
-  Object* operator+(const Object* rhs) override;
-  Object* operator-(const Object* rhs) override;
-  Object* operator*(const Object* rhs) override;
-  Object* operator/(const Object* rhs) override;
-  Object* operator%(const Object* rhs) override;
+  Object* add(const Object* rhs) override;
+  Object* subtract(const Object* rhs) override;
+  Object* multiply(const Object* rhs) override;
+  Object* divide(const Object* rhs) override;
+  Object* modulus(const Object* rhs) override;
 
   T getValue() const { return holder.value_; }
   void setValue(T value) { holder.value_ = value; }
