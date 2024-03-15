@@ -108,12 +108,12 @@ Object* TypedObject<double>::div<long>(const double& lhs, const long& rhs) {
 template <>
 template <>
 Object* TypedObject<double>::mod<double>(const double& lhs, const double& rhs) {
-  return new TypedObject<double>(fmod(lhs, rhs));
+  return new TypedObject<double>(std::fmod(lhs, rhs));
 }
 template <>
 template <>
 Object* TypedObject<double>::mod<long>(const double& lhs, const long& rhs) {
-  return new TypedObject<double>(fmod(lhs, rhs));
+  return new TypedObject<double>(std::fmod(lhs, rhs));
 }
 
 /// ------------Add Specializations for long----------
@@ -174,7 +174,7 @@ Object* TypedObject<long>::div<double>(const long& lhs, const double& rhs) {
 template <>
 template <>
 Object* TypedObject<long>::mod<double>(const long& lhs, const double& rhs) {
-  return new TypedObject<double>(fmod(lhs, rhs));
+  return new TypedObject<double>(std::fmod(lhs, rhs));
 }
 template <>
 template <>
