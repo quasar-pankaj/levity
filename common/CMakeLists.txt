@@ -11,15 +11,15 @@ target_include_directories(common PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Assume the test executable is named "tests"
 add_executable(
-    tests 
+    common_tests 
     test/test.cpp
 )
 
 # Link the GoogleTest libraries
-target_link_libraries(tests gtest gtest_main)
+target_link_libraries(common_tests gtest gtest_main)
 
 # Include the GoogleTest module and discover tests
 include(GoogleTest)
-gtest_discover_tests(tests)
+gtest_discover_tests(common_tests)
 
-add_test(NAME tests COMMAND tests)
+add_test(NAME common_tests COMMAND common_tests)

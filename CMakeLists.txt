@@ -19,9 +19,10 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 add_subdirectory(common)
+add_subdirectory(vm)
+add_subdirectory(application)
 #add_subdirectory(compilers)
 #add_subdirectory(loaders)
-#add_subdirectory(vm)
 #add_executable(${PROJECT_NAME} ${SRC_FILES})
 
 #use this if you want to make it accessible to all projects

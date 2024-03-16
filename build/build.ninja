@@ -1056,38 +1056,38 @@ build common/libcommon.a: CXX_STATIC_LIBRARY_LINKER__common_Debug common/CMakeFi
   TARGET_PDB = common.a.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target tests
+# Object build statements for EXECUTABLE target common_tests
 
 
 #############################################
-# Order-only phony target for tests
+# Order-only phony target for common_tests
 
-build cmake_object_order_depends_target_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+build cmake_object_order_depends_target_common_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
-build common/CMakeFiles/tests.dir/test/test.cpp.o: CXX_COMPILER__tests_Debug /home/pankaj/Projects/CPP/levity/common/test/test.cpp || cmake_object_order_depends_target_tests
-  DEP_FILE = common/CMakeFiles/tests.dir/test/test.cpp.o.d
+build common/CMakeFiles/common_tests.dir/test/test.cpp.o: CXX_COMPILER__common_tests_Debug /home/pankaj/Projects/CPP/levity/common/test/test.cpp || cmake_object_order_depends_target_common_tests
+  DEP_FILE = common/CMakeFiles/common_tests.dir/test/test.cpp.o.d
   FLAGS = -g -std=c++20
   INCLUDES = -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
-  OBJECT_DIR = common/CMakeFiles/tests.dir
-  OBJECT_FILE_DIR = common/CMakeFiles/tests.dir/test
+  OBJECT_DIR = common/CMakeFiles/common_tests.dir
+  OBJECT_FILE_DIR = common/CMakeFiles/common_tests.dir/test
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target tests
+# Link build statements for EXECUTABLE target common_tests
 
 
 #############################################
-# Link the executable common/tests
+# Link the executable common/common_tests
 
-build common/tests common/tests[1]_tests.cmake | ${cmake_ninja_workdir}common/tests[1]_tests.cmake: CXX_EXECUTABLE_LINKER__tests_Debug common/CMakeFiles/tests.dir/test/test.cpp.o | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+build common/common_tests common/common_tests[1]_tests.cmake | ${cmake_ninja_workdir}common/common_tests[1]_tests.cmake: CXX_EXECUTABLE_LINKER__common_tests_Debug common/CMakeFiles/common_tests.dir/test/test.cpp.o | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
   FLAGS = -g
   LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a
-  OBJECT_DIR = common/CMakeFiles/tests.dir
-  POST_BUILD = cd /home/pankaj/Projects/CPP/levity/build/common && /usr/bin/cmake -D TEST_TARGET=tests -D TEST_EXECUTABLE=/home/pankaj/Projects/CPP/levity/build/common/tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/pankaj/Projects/CPP/levity/build/common -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=tests_TESTS -D CTEST_FILE=/home/pankaj/Projects/CPP/levity/build/common/tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.25/Modules/GoogleTestAddTests.cmake
+  OBJECT_DIR = common/CMakeFiles/common_tests.dir
+  POST_BUILD = cd /home/pankaj/Projects/CPP/levity/build/common && /usr/bin/cmake -D TEST_TARGET=common_tests -D TEST_EXECUTABLE=/home/pankaj/Projects/CPP/levity/build/common/common_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/pankaj/Projects/CPP/levity/build/common -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=common_tests_TESTS -D CTEST_FILE=/home/pankaj/Projects/CPP/levity/build/common/common_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.25/Modules/GoogleTestAddTests.cmake
   PRE_LINK = :
   RESTAT = 1
-  TARGET_FILE = common/tests
-  TARGET_PDB = tests.dbg
+  TARGET_FILE = common/common_tests
+  TARGET_PDB = common_tests.dbg
 
 
 #############################################
@@ -1192,9 +1192,359 @@ build common/CMakeFiles/install/strip.util: CUSTOM_COMMAND common/all
 build common/install/strip: phony common/CMakeFiles/install/strip.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/pankaj/Projects/CPP/levity/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target vm
+
+
+#############################################
+# Order-only phony target for vm
+
+build cmake_object_order_depends_target_vm: phony || cmake_object_order_depends_target_common
+
+build vm/CMakeFiles/vm.dir/src/main.cpp.o: CXX_COMPILER__vm_Debug /home/pankaj/Projects/CPP/levity/vm/src/main.cpp || cmake_object_order_depends_target_vm
+  DEP_FILE = vm/CMakeFiles/vm.dir/src/main.cpp.o.d
+  FLAGS = -g -std=c++20
+  INCLUDES = -I/home/pankaj/Projects/CPP/levity/vm/include -I/home/pankaj/Projects/CPP/levity/common/include
+  OBJECT_DIR = vm/CMakeFiles/vm.dir
+  OBJECT_FILE_DIR = vm/CMakeFiles/vm.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vm
+
+
+#############################################
+# Link the executable vm/vm
+
+build vm/vm: CXX_EXECUTABLE_LINKER__vm_Debug vm/CMakeFiles/vm.dir/src/main.cpp.o | common/libcommon.a || common/libcommon.a
+  FLAGS = -g
+  LINK_LIBRARIES = common/libcommon.a
+  OBJECT_DIR = vm/CMakeFiles/vm.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = vm/vm
+  TARGET_PDB = vm.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target vm_tests
+
+
+#############################################
+# Order-only phony target for vm_tests
+
+build cmake_object_order_depends_target_vm_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build vm/CMakeFiles/vm_tests.dir/test/test.cpp.o: CXX_COMPILER__vm_tests_Debug /home/pankaj/Projects/CPP/levity/vm/test/test.cpp || cmake_object_order_depends_target_vm_tests
+  DEP_FILE = vm/CMakeFiles/vm_tests.dir/test/test.cpp.o.d
+  FLAGS = -g -std=c++20
+  INCLUDES = -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
+  OBJECT_DIR = vm/CMakeFiles/vm_tests.dir
+  OBJECT_FILE_DIR = vm/CMakeFiles/vm_tests.dir/test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vm_tests
+
+
+#############################################
+# Link the executable vm/vm_tests
+
+build vm/vm_tests vm/vm_tests[1]_tests.cmake | ${cmake_ninja_workdir}vm/vm_tests[1]_tests.cmake: CXX_EXECUTABLE_LINKER__vm_tests_Debug vm/CMakeFiles/vm_tests.dir/test/test.cpp.o | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a
+  OBJECT_DIR = vm/CMakeFiles/vm_tests.dir
+  POST_BUILD = cd /home/pankaj/Projects/CPP/levity/build/vm && /usr/bin/cmake -D TEST_TARGET=vm_tests -D TEST_EXECUTABLE=/home/pankaj/Projects/CPP/levity/build/vm/vm_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/pankaj/Projects/CPP/levity/build/vm -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=vm_tests_TESTS -D CTEST_FILE=/home/pankaj/Projects/CPP/levity/build/vm/vm_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.25/Modules/GoogleTestAddTests.cmake
+  PRE_LINK = :
+  RESTAT = 1
+  TARGET_FILE = vm/vm_tests
+  TARGET_PDB = vm_tests.dbg
+
+
+#############################################
+# Utility command for package
+
+build vm/CMakeFiles/package.util: CUSTOM_COMMAND vm/all
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build vm/package: phony vm/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build vm/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/pankaj/Projects/CPP/levity/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build vm/package_source: phony vm/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for test
+
+build vm/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/vm && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build vm/test: phony vm/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build vm/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/vm && /usr/bin/cmake-gui -S/home/pankaj/Projects/CPP/levity -B/home/pankaj/Projects/CPP/levity/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build vm/edit_cache: phony vm/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build vm/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/vm && /usr/bin/cmake --regenerate-during-build -S/home/pankaj/Projects/CPP/levity -B/home/pankaj/Projects/CPP/levity/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build vm/rebuild_cache: phony vm/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build vm/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build vm/CMakeFiles/install.util: CUSTOM_COMMAND vm/all
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/vm && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build vm/install: phony vm/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build vm/CMakeFiles/install/local.util: CUSTOM_COMMAND vm/all
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/vm && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build vm/install/local: phony vm/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build vm/CMakeFiles/install/strip.util: CUSTOM_COMMAND vm/all
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/vm && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build vm/install/strip: phony vm/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/pankaj/Projects/CPP/levity/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target levity
+
+
+#############################################
+# Order-only phony target for levity
+
+build cmake_object_order_depends_target_levity: phony || cmake_object_order_depends_target_common
+
+build application/CMakeFiles/levity.dir/src/main.cpp.o: CXX_COMPILER__levity_Debug /home/pankaj/Projects/CPP/levity/application/src/main.cpp || cmake_object_order_depends_target_levity
+  DEP_FILE = application/CMakeFiles/levity.dir/src/main.cpp.o.d
+  FLAGS = -g -std=c++20
+  INCLUDES = -I/home/pankaj/Projects/CPP/levity/application/include -I/home/pankaj/Projects/CPP/levity/common/include
+  OBJECT_DIR = application/CMakeFiles/levity.dir
+  OBJECT_FILE_DIR = application/CMakeFiles/levity.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target levity
+
+
+#############################################
+# Link the executable application/levity
+
+build application/levity: CXX_EXECUTABLE_LINKER__levity_Debug application/CMakeFiles/levity.dir/src/main.cpp.o | common/libcommon.a || common/libcommon.a
+  FLAGS = -g
+  LINK_LIBRARIES = common/libcommon.a
+  OBJECT_DIR = application/CMakeFiles/levity.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = application/levity
+  TARGET_PDB = levity.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target main_tests
+
+
+#############################################
+# Order-only phony target for main_tests
+
+build cmake_object_order_depends_target_main_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build application/CMakeFiles/main_tests.dir/test/test.cpp.o: CXX_COMPILER__main_tests_Debug /home/pankaj/Projects/CPP/levity/application/test/test.cpp || cmake_object_order_depends_target_main_tests
+  DEP_FILE = application/CMakeFiles/main_tests.dir/test/test.cpp.o.d
+  FLAGS = -g -std=c++20
+  INCLUDES = -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
+  OBJECT_DIR = application/CMakeFiles/main_tests.dir
+  OBJECT_FILE_DIR = application/CMakeFiles/main_tests.dir/test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target main_tests
+
+
+#############################################
+# Link the executable application/main_tests
+
+build application/main_tests application/main_tests[1]_tests.cmake | ${cmake_ninja_workdir}application/main_tests[1]_tests.cmake: CXX_EXECUTABLE_LINKER__main_tests_Debug application/CMakeFiles/main_tests.dir/test/test.cpp.o | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a
+  OBJECT_DIR = application/CMakeFiles/main_tests.dir
+  POST_BUILD = cd /home/pankaj/Projects/CPP/levity/build/application && /usr/bin/cmake -D TEST_TARGET=main_tests -D TEST_EXECUTABLE=/home/pankaj/Projects/CPP/levity/build/application/main_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/pankaj/Projects/CPP/levity/build/application -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=main_tests_TESTS -D CTEST_FILE=/home/pankaj/Projects/CPP/levity/build/application/main_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.25/Modules/GoogleTestAddTests.cmake
+  PRE_LINK = :
+  RESTAT = 1
+  TARGET_FILE = application/main_tests
+  TARGET_PDB = main_tests.dbg
+
+
+#############################################
+# Utility command for package
+
+build application/CMakeFiles/package.util: CUSTOM_COMMAND application/all
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build application/package: phony application/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build application/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/pankaj/Projects/CPP/levity/build/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build application/package_source: phony application/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for test
+
+build application/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/application && /usr/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build application/test: phony application/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build application/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/application && /usr/bin/cmake-gui -S/home/pankaj/Projects/CPP/levity -B/home/pankaj/Projects/CPP/levity/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build application/edit_cache: phony application/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build application/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/application && /usr/bin/cmake --regenerate-during-build -S/home/pankaj/Projects/CPP/levity -B/home/pankaj/Projects/CPP/levity/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build application/rebuild_cache: phony application/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build application/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build application/CMakeFiles/install.util: CUSTOM_COMMAND application/all
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/application && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build application/install: phony application/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build application/CMakeFiles/install/local.util: CUSTOM_COMMAND application/all
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/application && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build application/install/local: phony application/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build application/CMakeFiles/install/strip.util: CUSTOM_COMMAND application/all
+  COMMAND = cd /home/pankaj/Projects/CPP/levity/build/application && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build application/install/strip: phony application/CMakeFiles/install/strip.util
+
+# =============================================================================
 # Target aliases.
 
 build common: phony common/libcommon.a
+
+build common_tests: phony common/common_tests
 
 build gmock: phony lib/libgmock.a
 
@@ -1203,6 +1553,8 @@ build gmock_main: phony lib/libgmock_main.a
 build gtest: phony lib/libgtest.a
 
 build gtest_main: phony lib/libgtest_main.a
+
+build levity: phony application/levity
 
 build libcommon.a: phony common/libcommon.a
 
@@ -1214,7 +1566,11 @@ build libgtest.a: phony lib/libgtest.a
 
 build libgtest_main.a: phony lib/libgtest_main.a
 
-build tests: phony common/tests
+build main_tests: phony application/main_tests
+
+build vm: phony vm/vm
+
+build vm_tests: phony vm/vm_tests
 
 # =============================================================================
 # Folder targets.
@@ -1224,7 +1580,7 @@ build tests: phony common/tests
 #############################################
 # Folder: /home/pankaj/Projects/CPP/levity/build
 
-build all: phony _deps/googletest-build/all common/all
+build all: phony _deps/googletest-build/all common/all vm/all application/all
 
 # =============================================================================
 
@@ -1250,9 +1606,23 @@ build _deps/googletest-build/googletest/all: phony lib/libgtest.a lib/libgtest_m
 # =============================================================================
 
 #############################################
+# Folder: /home/pankaj/Projects/CPP/levity/build/application
+
+build application/all: phony application/levity application/main_tests
+
+# =============================================================================
+
+#############################################
 # Folder: /home/pankaj/Projects/CPP/levity/build/common
 
-build common/all: phony common/libcommon.a common/tests
+build common/all: phony common/libcommon.a common/common_tests
+
+# =============================================================================
+
+#############################################
+# Folder: /home/pankaj/Projects/CPP/levity/build/vm
+
+build vm/all: phony vm/vm vm/vm_tests
 
 # =============================================================================
 # Built-in targets
@@ -1261,14 +1631,14 @@ build common/all: phony common/libcommon.a common/tests
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/pankaj/Projects/CPP/levity/CMakeLists.txt /home/pankaj/Projects/CPP/levity/common/CMakeLists.txt /usr/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/CPack.cmake /usr/share/cmake-3.25/Modules/CPackComponent.cmake /usr/share/cmake-3.25/Modules/CTest.cmake /usr/share/cmake-3.25/Modules/CTestTargets.cmake /usr/share/cmake-3.25/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.25/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.25/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.25/Modules/FetchContent/package-config-version.cmake.in /usr/share/cmake-3.25/Modules/FetchContent/package-config.cmake.in /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/FindPython/Support.cmake /usr/share/cmake-3.25/Modules/FindPython3.cmake /usr/share/cmake-3.25/Modules/FindThreads.cmake /usr/share/cmake-3.25/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.25/Modules/GoogleTest.cmake /usr/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake-3.25/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
+build build.ninja: RERUN_CMAKE | /home/pankaj/Projects/CPP/levity/CMakeLists.txt /home/pankaj/Projects/CPP/levity/application/CMakeLists.txt /home/pankaj/Projects/CPP/levity/common/CMakeLists.txt /home/pankaj/Projects/CPP/levity/vm/CMakeLists.txt /usr/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/CPack.cmake /usr/share/cmake-3.25/Modules/CPackComponent.cmake /usr/share/cmake-3.25/Modules/CTest.cmake /usr/share/cmake-3.25/Modules/CTestTargets.cmake /usr/share/cmake-3.25/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.25/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.25/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.25/Modules/FetchContent/package-config-version.cmake.in /usr/share/cmake-3.25/Modules/FetchContent/package-config.cmake.in /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/FindPython/Support.cmake /usr/share/cmake-3.25/Modules/FindPython3.cmake /usr/share/cmake-3.25/Modules/FindThreads.cmake /usr/share/cmake-3.25/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.25/Modules/GoogleTest.cmake /usr/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake-3.25/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/pankaj/Projects/CPP/levity/CMakeLists.txt /home/pankaj/Projects/CPP/levity/common/CMakeLists.txt /usr/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/CPack.cmake /usr/share/cmake-3.25/Modules/CPackComponent.cmake /usr/share/cmake-3.25/Modules/CTest.cmake /usr/share/cmake-3.25/Modules/CTestTargets.cmake /usr/share/cmake-3.25/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.25/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.25/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.25/Modules/FetchContent/package-config-version.cmake.in /usr/share/cmake-3.25/Modules/FetchContent/package-config.cmake.in /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/FindPython/Support.cmake /usr/share/cmake-3.25/Modules/FindPython3.cmake /usr/share/cmake-3.25/Modules/FindThreads.cmake /usr/share/cmake-3.25/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.25/Modules/GoogleTest.cmake /usr/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake-3.25/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
+build /home/pankaj/Projects/CPP/levity/CMakeLists.txt /home/pankaj/Projects/CPP/levity/application/CMakeLists.txt /home/pankaj/Projects/CPP/levity/common/CMakeLists.txt /home/pankaj/Projects/CPP/levity/vm/CMakeLists.txt /usr/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/CPack.cmake /usr/share/cmake-3.25/Modules/CPackComponent.cmake /usr/share/cmake-3.25/Modules/CTest.cmake /usr/share/cmake-3.25/Modules/CTestTargets.cmake /usr/share/cmake-3.25/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.25/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.25/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.25/Modules/FetchContent/package-config-version.cmake.in /usr/share/cmake-3.25/Modules/FetchContent/package-config.cmake.in /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/FindPython/Support.cmake /usr/share/cmake-3.25/Modules/FindPython3.cmake /usr/share/cmake-3.25/Modules/FindThreads.cmake /usr/share/cmake-3.25/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.25/Modules/GoogleTest.cmake /usr/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake /usr/share/cmake-3.25/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
 
 
 #############################################

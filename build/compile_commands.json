@@ -51,7 +51,27 @@
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o common/CMakeFiles/tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/common/test/test.cpp",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o common/CMakeFiles/common_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/common/test/test.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/test/test.cpp"
+},
+{
+  "directory": "/home/pankaj/Projects/CPP/levity/build",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/vm/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o vm/CMakeFiles/vm.dir/src/main.cpp.o -c /home/pankaj/Projects/CPP/levity/vm/src/main.cpp",
+  "file": "/home/pankaj/Projects/CPP/levity/vm/src/main.cpp"
+},
+{
+  "directory": "/home/pankaj/Projects/CPP/levity/build",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o vm/CMakeFiles/vm_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/vm/test/test.cpp",
+  "file": "/home/pankaj/Projects/CPP/levity/vm/test/test.cpp"
+},
+{
+  "directory": "/home/pankaj/Projects/CPP/levity/build",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/application/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o application/CMakeFiles/levity.dir/src/main.cpp.o -c /home/pankaj/Projects/CPP/levity/application/src/main.cpp",
+  "file": "/home/pankaj/Projects/CPP/levity/application/src/main.cpp"
+},
+{
+  "directory": "/home/pankaj/Projects/CPP/levity/build",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o application/CMakeFiles/main_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/application/test/test.cpp",
+  "file": "/home/pankaj/Projects/CPP/levity/application/test/test.cpp"
 }
 ]
