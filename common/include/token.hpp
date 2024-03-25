@@ -6,13 +6,16 @@ namespace common {
 class Token {
  public:
   enum class Type {
-    Number,
+    Float,
+    Integer,
     String,
-    Logical,
-    List,
-    Object,
-    Instruction,
-    Halt
+    Add,
+    Subtract,
+    Multiply,
+    Divide,
+    Modulus,
+    Equals,
+    Halt,
   };
   
   Token(Type type, const std::string& value) : type_(type), value_(value) {}

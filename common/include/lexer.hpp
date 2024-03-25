@@ -17,5 +17,10 @@ class Lexer {
   std::string source_;
   std::string::const_iterator current_;
   std::vector<Token*> tokens_;
+
+  void skipWhitespace();
+  void parseNumber();
+  void parseString();
+  void parseIdentifier();
 };
 }  // namespace common
