@@ -1,4 +1,6 @@
-add_library(lexers STATIC common src/rpn_parser.cpp)
+add_library(lexers STATIC
+    src/rpn_lexer.cpp
+)
 target_include_directories(lexers PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(lexers PUBLIC common)
 

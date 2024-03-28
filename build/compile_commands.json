@@ -56,6 +56,11 @@
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/print.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/print.cpp",
+  "file": "/home/pankaj/Projects/CPP/levity/common/src/print.cpp"
+},
+{
+  "directory": "/home/pankaj/Projects/CPP/levity/build",
   "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o common/CMakeFiles/common_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/common/test/test.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/test/test.cpp"
 },
@@ -78,5 +83,25 @@
   "directory": "/home/pankaj/Projects/CPP/levity/build",
   "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o application/CMakeFiles/main_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/application/test/test.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/application/test/test.cpp"
+},
+{
+  "directory": "/home/pankaj/Projects/CPP/levity/build",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/parsers/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o parsers/CMakeFiles/parsers.dir/src/rpn_parser.cpp.o -c /home/pankaj/Projects/CPP/levity/parsers/src/rpn_parser.cpp",
+  "file": "/home/pankaj/Projects/CPP/levity/parsers/src/rpn_parser.cpp"
+},
+{
+  "directory": "/home/pankaj/Projects/CPP/levity/build",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o parsers/CMakeFiles/parser_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/parsers/test/test.cpp",
+  "file": "/home/pankaj/Projects/CPP/levity/parsers/test/test.cpp"
+},
+{
+  "directory": "/home/pankaj/Projects/CPP/levity/build",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/lexers/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o lexers/CMakeFiles/lexers.dir/src/rpn_lexer.cpp.o -c /home/pankaj/Projects/CPP/levity/lexers/src/rpn_lexer.cpp",
+  "file": "/home/pankaj/Projects/CPP/levity/lexers/src/rpn_lexer.cpp"
+},
+{
+  "directory": "/home/pankaj/Projects/CPP/levity/build",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o lexers/CMakeFiles/lexer_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/lexers/test/test.cpp",
+  "file": "/home/pankaj/Projects/CPP/levity/lexers/test/test.cpp"
 }
 ]

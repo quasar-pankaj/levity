@@ -8,19 +8,20 @@
 namespace common {
 class Lexer {
  public:
-  explicit Lexer(const std::string& source)
-      : source_(source), current_(source_.begin()) {}
-  std::vector<Token*>
-  tokenize();  // Make sure to return tokens in the correct postfix order
+  explicit Lexer(const std::string& filename);
+  virtual ~Lexer();
 
- private:
+  // Make sure to return tokens in the correct postfix order
+  virtual std::vector<Token*> tokenize() = 0;
+
+ protected:
   std::string source_;
-  std::string::const_iterator current_;
+  std::string::iterator current_;
   std::vector<Token*> tokens_;
 
-  void skipWhitespace();
+  void parseIdentifier();
   void parseNumber();
   void parseString();
-  void parseIdentifier();
+  void skipWhitespace();
 };
 }  // namespace common

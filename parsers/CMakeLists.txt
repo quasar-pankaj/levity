@@ -1,4 +1,6 @@
-add_library(parsers STATIC common src/rpn_parser.cpp)
+add_library(parsers STATIC 
+    src/rpn_parser.cpp
+)
 target_include_directories(parsers PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(parsers PUBLIC common)
 

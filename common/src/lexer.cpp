@@ -2,42 +2,25 @@
 
 #include <cctype>
 #include <stdexcept>
+#include <fstream>
 
 namespace common {
 
-std::vector<Token*> Lexer::tokenize() {
-  while (current_ != source_.end()) {
-    if (*current_ == '+') {
-      tokens_.push_back(new Token(Token::Type::Add, "+"));
-      ++current_;
-    } else if (*current_ == '-') {
-      tokens_.push_back(new Token(Token::Type::Subtract, "-"));
-      ++current_;
-    } else if (*current_ == '*') {
-      tokens_.push_back(new Token(Token::Type::Multiply, "*"));
-      ++current_;
-    } else if (*current_ == '/') {
-      tokens_.push_back(new Token(Token::Type::Divide, "/"));
-      ++current_;
-    } else if (*current_ == '%') {
-      tokens_.push_back(new Token(Token::Type::Modulus, "%"));
-      ++current_;
-    } else if (*current_ == '?') {
-      tokens_.push_back(new Token(Token::Type::Print, "?"));
-      ++current_;
-    } else if (std::isspace(static_cast<unsigned char>(*current_))) {
-      skipWhitespace();
-    } else if (*current_ == '\0') {
-      break;
-    } else if (std::isdigit(static_cast<unsigned char>(*current_))) {
-      parseNumber();
-    } else if(std::isalpha(static_cast<unsigned char>(*current_))){
-      parseIdentifier();
-    }else{
-      throw std::runtime_error("Invalid character: " + std::string(1, *current_));
-    }
+Lexer::Lexer(const std::string& filename) {
+  std::ifstream file(filename);
+  if (!file.is_open()) {
+    throw std::runtime_error("Failed to open file");
   }
-  return tokens_;
+  std::string source((std::istreambuf_iterator<char>(file)),
+                     std::istreambuf_iterator<char>());
+  source_ = source;
+}
+
+Lexer::~Lexer() {
+  for (auto token : tokens_) {
+    delete token;
+  }
+  tokens_.clear();
 }
 
 void Lexer::skipWhitespace() {
