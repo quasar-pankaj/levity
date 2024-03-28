@@ -6,6 +6,7 @@ add_library(common STATIC
     src/binary_operator.cpp
     src/ternary_operator.cpp
     src/lexer.cpp
+    src/print.cpp
 )
 target_include_directories(common PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 #target_link_libraries(common PRIVATE libmath)
