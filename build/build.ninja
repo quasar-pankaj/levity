@@ -657,7 +657,7 @@ build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depen
 
 build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_Debug /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
-  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++20
+  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/include -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src
@@ -689,7 +689,7 @@ build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_
 
 build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_Debug /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
-  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++20
+  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++2b
   INCLUDES = -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src
@@ -828,7 +828,7 @@ build cmake_object_order_depends_target_gtest: phony || _deps/googletest-build/g
 
 build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_Debug /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
-  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++20
+  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src
@@ -860,7 +860,7 @@ build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_
 
 build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_Debug /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
-  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++20
+  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++2b
   INCLUDES = -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
   OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
   OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src
@@ -999,56 +999,56 @@ build cmake_object_order_depends_target_common: phony || common/CMakeFiles/commo
 
 build common/CMakeFiles/common.dir/src/loader.cpp.o: CXX_COMPILER__common_Debug /home/pankaj/Projects/CPP/levity/common/src/loader.cpp || cmake_object_order_depends_target_common
   DEP_FILE = common/CMakeFiles/common.dir/src/loader.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = common/CMakeFiles/common.dir
   OBJECT_FILE_DIR = common/CMakeFiles/common.dir/src
 
 build common/CMakeFiles/common.dir/src/vm.cpp.o: CXX_COMPILER__common_Debug /home/pankaj/Projects/CPP/levity/common/src/vm.cpp || cmake_object_order_depends_target_common
   DEP_FILE = common/CMakeFiles/common.dir/src/vm.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = common/CMakeFiles/common.dir
   OBJECT_FILE_DIR = common/CMakeFiles/common.dir/src
 
 build common/CMakeFiles/common.dir/src/typed_object.cpp.o: CXX_COMPILER__common_Debug /home/pankaj/Projects/CPP/levity/common/src/typed_object.cpp || cmake_object_order_depends_target_common
   DEP_FILE = common/CMakeFiles/common.dir/src/typed_object.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = common/CMakeFiles/common.dir
   OBJECT_FILE_DIR = common/CMakeFiles/common.dir/src
 
 build common/CMakeFiles/common.dir/src/unary_operator.cpp.o: CXX_COMPILER__common_Debug /home/pankaj/Projects/CPP/levity/common/src/unary_operator.cpp || cmake_object_order_depends_target_common
   DEP_FILE = common/CMakeFiles/common.dir/src/unary_operator.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = common/CMakeFiles/common.dir
   OBJECT_FILE_DIR = common/CMakeFiles/common.dir/src
 
 build common/CMakeFiles/common.dir/src/binary_operator.cpp.o: CXX_COMPILER__common_Debug /home/pankaj/Projects/CPP/levity/common/src/binary_operator.cpp || cmake_object_order_depends_target_common
   DEP_FILE = common/CMakeFiles/common.dir/src/binary_operator.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = common/CMakeFiles/common.dir
   OBJECT_FILE_DIR = common/CMakeFiles/common.dir/src
 
 build common/CMakeFiles/common.dir/src/ternary_operator.cpp.o: CXX_COMPILER__common_Debug /home/pankaj/Projects/CPP/levity/common/src/ternary_operator.cpp || cmake_object_order_depends_target_common
   DEP_FILE = common/CMakeFiles/common.dir/src/ternary_operator.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = common/CMakeFiles/common.dir
   OBJECT_FILE_DIR = common/CMakeFiles/common.dir/src
 
 build common/CMakeFiles/common.dir/src/lexer.cpp.o: CXX_COMPILER__common_Debug /home/pankaj/Projects/CPP/levity/common/src/lexer.cpp || cmake_object_order_depends_target_common
   DEP_FILE = common/CMakeFiles/common.dir/src/lexer.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = common/CMakeFiles/common.dir
   OBJECT_FILE_DIR = common/CMakeFiles/common.dir/src
 
 build common/CMakeFiles/common.dir/src/print.cpp.o: CXX_COMPILER__common_Debug /home/pankaj/Projects/CPP/levity/common/src/print.cpp || cmake_object_order_depends_target_common
   DEP_FILE = common/CMakeFiles/common.dir/src/print.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = common/CMakeFiles/common.dir
   OBJECT_FILE_DIR = common/CMakeFiles/common.dir/src
@@ -1080,7 +1080,7 @@ build cmake_object_order_depends_target_common_tests: phony || cmake_object_orde
 
 build common/CMakeFiles/common_tests.dir/test/test.cpp.o: CXX_COMPILER__common_tests_Debug /home/pankaj/Projects/CPP/levity/common/test/test.cpp || cmake_object_order_depends_target_common_tests
   DEP_FILE = common/CMakeFiles/common_tests.dir/test/test.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
   OBJECT_DIR = common/CMakeFiles/common_tests.dir
   OBJECT_FILE_DIR = common/CMakeFiles/common_tests.dir/test
@@ -1221,7 +1221,7 @@ build cmake_object_order_depends_target_vm: phony || cmake_object_order_depends_
 
 build vm/CMakeFiles/vm.dir/src/main.cpp.o: CXX_COMPILER__vm_Debug /home/pankaj/Projects/CPP/levity/vm/src/main.cpp || cmake_object_order_depends_target_vm
   DEP_FILE = vm/CMakeFiles/vm.dir/src/main.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/vm/include -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = vm/CMakeFiles/vm.dir
   OBJECT_FILE_DIR = vm/CMakeFiles/vm.dir/src
@@ -1254,7 +1254,7 @@ build cmake_object_order_depends_target_vm_tests: phony || cmake_object_order_de
 
 build vm/CMakeFiles/vm_tests.dir/test/test.cpp.o: CXX_COMPILER__vm_tests_Debug /home/pankaj/Projects/CPP/levity/vm/test/test.cpp || cmake_object_order_depends_target_vm_tests
   DEP_FILE = vm/CMakeFiles/vm_tests.dir/test/test.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
   OBJECT_DIR = vm/CMakeFiles/vm_tests.dir
   OBJECT_FILE_DIR = vm/CMakeFiles/vm_tests.dir/test
@@ -1395,7 +1395,7 @@ build cmake_object_order_depends_target_levity: phony || cmake_object_order_depe
 
 build application/CMakeFiles/levity.dir/src/main.cpp.o: CXX_COMPILER__levity_Debug /home/pankaj/Projects/CPP/levity/application/src/main.cpp || cmake_object_order_depends_target_levity
   DEP_FILE = application/CMakeFiles/levity.dir/src/main.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/application/include -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = application/CMakeFiles/levity.dir
   OBJECT_FILE_DIR = application/CMakeFiles/levity.dir/src
@@ -1428,7 +1428,7 @@ build cmake_object_order_depends_target_main_tests: phony || cmake_object_order_
 
 build application/CMakeFiles/main_tests.dir/test/test.cpp.o: CXX_COMPILER__main_tests_Debug /home/pankaj/Projects/CPP/levity/application/test/test.cpp || cmake_object_order_depends_target_main_tests
   DEP_FILE = application/CMakeFiles/main_tests.dir/test/test.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
   OBJECT_DIR = application/CMakeFiles/main_tests.dir
   OBJECT_FILE_DIR = application/CMakeFiles/main_tests.dir/test
@@ -1569,7 +1569,7 @@ build cmake_object_order_depends_target_parsers: phony || cmake_object_order_dep
 
 build parsers/CMakeFiles/parsers.dir/src/rpn_parser.cpp.o: CXX_COMPILER__parsers_Debug /home/pankaj/Projects/CPP/levity/parsers/src/rpn_parser.cpp || cmake_object_order_depends_target_parsers
   DEP_FILE = parsers/CMakeFiles/parsers.dir/src/rpn_parser.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/parsers/include -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = parsers/CMakeFiles/parsers.dir
   OBJECT_FILE_DIR = parsers/CMakeFiles/parsers.dir/src
@@ -1601,7 +1601,7 @@ build cmake_object_order_depends_target_parser_tests: phony || cmake_object_orde
 
 build parsers/CMakeFiles/parser_tests.dir/test/test.cpp.o: CXX_COMPILER__parser_tests_Debug /home/pankaj/Projects/CPP/levity/parsers/test/test.cpp || cmake_object_order_depends_target_parser_tests
   DEP_FILE = parsers/CMakeFiles/parser_tests.dir/test/test.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
   OBJECT_DIR = parsers/CMakeFiles/parser_tests.dir
   OBJECT_FILE_DIR = parsers/CMakeFiles/parser_tests.dir/test
@@ -1742,7 +1742,7 @@ build cmake_object_order_depends_target_lexers: phony || cmake_object_order_depe
 
 build lexers/CMakeFiles/lexers.dir/src/rpn_lexer.cpp.o: CXX_COMPILER__lexers_Debug /home/pankaj/Projects/CPP/levity/lexers/src/rpn_lexer.cpp || cmake_object_order_depends_target_lexers
   DEP_FILE = lexers/CMakeFiles/lexers.dir/src/rpn_lexer.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -I/home/pankaj/Projects/CPP/levity/lexers/include -I/home/pankaj/Projects/CPP/levity/common/include
   OBJECT_DIR = lexers/CMakeFiles/lexers.dir
   OBJECT_FILE_DIR = lexers/CMakeFiles/lexers.dir/src
@@ -1774,7 +1774,7 @@ build cmake_object_order_depends_target_lexer_tests: phony || cmake_object_order
 
 build lexers/CMakeFiles/lexer_tests.dir/test/test.cpp.o: CXX_COMPILER__lexer_tests_Debug /home/pankaj/Projects/CPP/levity/lexers/test/test.cpp || cmake_object_order_depends_target_lexer_tests
   DEP_FILE = lexers/CMakeFiles/lexer_tests.dir/test/test.cpp.o.d
-  FLAGS = -g -std=c++20
+  FLAGS = -g -std=c++2b
   INCLUDES = -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest
   OBJECT_DIR = lexers/CMakeFiles/lexer_tests.dir
   OBJECT_FILE_DIR = lexers/CMakeFiles/lexer_tests.dir/test

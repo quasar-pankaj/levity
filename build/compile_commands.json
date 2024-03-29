@@ -1,107 +1,107 @@
 [
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/include -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++20 -o _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/include -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++2b -o _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
   "file": "/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/src/gmock-all.cc"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++20 -o _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++2b -o _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
   "file": "/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googlemock/src/gmock_main.cc"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++20 -o _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -I/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++2b -o _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/src/gtest-all.cc",
   "file": "/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/src/gtest-all.cc"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++20 -o _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -std=c++2b -o _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/src/gtest_main.cc",
   "file": "/home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/src/gtest_main.cc"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/loader.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/loader.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o common/CMakeFiles/common.dir/src/loader.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/loader.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/src/loader.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/vm.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/vm.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o common/CMakeFiles/common.dir/src/vm.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/vm.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/src/vm.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/typed_object.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/typed_object.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o common/CMakeFiles/common.dir/src/typed_object.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/typed_object.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/src/typed_object.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/unary_operator.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/unary_operator.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o common/CMakeFiles/common.dir/src/unary_operator.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/unary_operator.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/src/unary_operator.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/binary_operator.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/binary_operator.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o common/CMakeFiles/common.dir/src/binary_operator.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/binary_operator.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/src/binary_operator.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/ternary_operator.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/ternary_operator.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o common/CMakeFiles/common.dir/src/ternary_operator.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/ternary_operator.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/src/ternary_operator.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/lexer.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/lexer.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o common/CMakeFiles/common.dir/src/lexer.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/lexer.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/src/lexer.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o common/CMakeFiles/common.dir/src/print.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/print.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o common/CMakeFiles/common.dir/src/print.cpp.o -c /home/pankaj/Projects/CPP/levity/common/src/print.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/src/print.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o common/CMakeFiles/common_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/common/test/test.cpp",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++2b -o common/CMakeFiles/common_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/common/test/test.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/common/test/test.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/vm/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o vm/CMakeFiles/vm.dir/src/main.cpp.o -c /home/pankaj/Projects/CPP/levity/vm/src/main.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/vm/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o vm/CMakeFiles/vm.dir/src/main.cpp.o -c /home/pankaj/Projects/CPP/levity/vm/src/main.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/vm/src/main.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o vm/CMakeFiles/vm_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/vm/test/test.cpp",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++2b -o vm/CMakeFiles/vm_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/vm/test/test.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/vm/test/test.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/application/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o application/CMakeFiles/levity.dir/src/main.cpp.o -c /home/pankaj/Projects/CPP/levity/application/src/main.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/application/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o application/CMakeFiles/levity.dir/src/main.cpp.o -c /home/pankaj/Projects/CPP/levity/application/src/main.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/application/src/main.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o application/CMakeFiles/main_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/application/test/test.cpp",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++2b -o application/CMakeFiles/main_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/application/test/test.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/application/test/test.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/parsers/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o parsers/CMakeFiles/parsers.dir/src/rpn_parser.cpp.o -c /home/pankaj/Projects/CPP/levity/parsers/src/rpn_parser.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/parsers/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o parsers/CMakeFiles/parsers.dir/src/rpn_parser.cpp.o -c /home/pankaj/Projects/CPP/levity/parsers/src/rpn_parser.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/parsers/src/rpn_parser.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o parsers/CMakeFiles/parser_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/parsers/test/test.cpp",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++2b -o parsers/CMakeFiles/parser_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/parsers/test/test.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/parsers/test/test.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/lexers/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++20 -o lexers/CMakeFiles/lexers.dir/src/rpn_lexer.cpp.o -c /home/pankaj/Projects/CPP/levity/lexers/src/rpn_lexer.cpp",
+  "command": "/usr/bin/clang++-16 -I/home/pankaj/Projects/CPP/levity/lexers/include -I/home/pankaj/Projects/CPP/levity/common/include -g -std=c++2b -o lexers/CMakeFiles/lexers.dir/src/rpn_lexer.cpp.o -c /home/pankaj/Projects/CPP/levity/lexers/src/rpn_lexer.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/lexers/src/rpn_lexer.cpp"
 },
 {
   "directory": "/home/pankaj/Projects/CPP/levity/build",
-  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++20 -o lexers/CMakeFiles/lexer_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/lexers/test/test.cpp",
+  "command": "/usr/bin/clang++-16 -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest/include -isystem /home/pankaj/Projects/CPP/levity/build/_deps/googletest-src/googletest -g -std=c++2b -o lexers/CMakeFiles/lexer_tests.dir/test/test.cpp.o -c /home/pankaj/Projects/CPP/levity/lexers/test/test.cpp",
   "file": "/home/pankaj/Projects/CPP/levity/lexers/test/test.cpp"
 }
 ]
