@@ -13,7 +13,7 @@ class TypedObject : public Object {
   TypedObject() = default;
   virtual ~TypedObject() = default;
 
-  virtual std::string toString() const { return std::to_string(holder.value_); }
+  virtual std::string toString() const { return std::to_string(value_); }
 
   Object* add(const Object* rhs) override;
   Object* subtract(const Object* rhs) override;
@@ -21,14 +21,11 @@ class TypedObject : public Object {
   Object* divide(const Object* rhs) override;
   Object* modulus(const Object* rhs) override;
 
-  T getValue() const { return holder.value_; }
-  void setValue(T value) { holder.value_ = value; }
+  T getValue() const { return value_; }
+  void setValue(T value) { value_ = value; }
 
  private:
-  union typed_object {
-    T value_;
-    char bytes_[sizeof(T)];  // this is to handle endianness
-  } holder;
+  T value_;
 
   template<typename RHS>
   Object* performOperation(const Object* rhs, Object *(*op)(const T&, const RHS&));

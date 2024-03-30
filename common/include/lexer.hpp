@@ -23,5 +23,8 @@ class Lexer {
   void parseNumber();
   void parseString();
   void skipWhitespace();
+  bool peek(const char c);
+  bool consume(const char c);
+  bool consume(const char* str);
 };
 }  // namespace common

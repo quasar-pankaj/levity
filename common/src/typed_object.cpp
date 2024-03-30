@@ -7,7 +7,7 @@
 namespace common {
 
 template <typename T>
-TypedObject<T>::TypedObject(T value) : holder{value} {
+TypedObject<T>::TypedObject(T value) : value_{value} {
   if (typeid(T) == typeid(double) || typeid(T) == typeid(long)) {
     setType(ObjectType::Number);
   } else if (typeid(T) == typeid(std::string)) {
@@ -255,7 +255,7 @@ Object* TypedObject<T>::performOperation(const Object* rhs,
   if (!r) {
     return nullptr;
   }
-  return op(holder.value_, r->holder.value_);
+  return op(value_, r->value_);
 }
 
 template <typename T>

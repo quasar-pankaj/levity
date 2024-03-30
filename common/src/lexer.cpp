@@ -1,8 +1,8 @@
 #include "lexer.hpp"
 
 #include <cctype>
-#include <stdexcept>
 #include <fstream>
+#include <stdexcept>
 
 namespace common {
 
@@ -73,5 +73,29 @@ void Lexer::parseIdentifier() {
     ++current_;
   }
   tokens_.push_back(new Token(Token::Type::Identifier, value));
+}
+
+bool Lexer::peek(const char c) {
+  return (*current_ == c);
+}
+
+bool Lexer::consume(const char c) {
+  if (*current_ == c) {
+    ++current_;
+    return true;
+  }
+  return false;
+}
+
+bool Lexer::consume(const char* str) {
+  std::string::iterator start = current_;
+  for (const char* c = str; *c != '\0' && current_ != source_.end(); ++c) {
+    if (*current_ != *c) {
+      current_ = start;
+      return false;
+    }
+    ++current_;
+  }
+  return true;
 }
 }  // namespace common
