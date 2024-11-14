@@ -1,9 +1,7 @@
 #pragma once
 
-#include <cstdint>
 #include <stack>
 #include <string>
-#include <type_traits>
 #include <vector>
 
 #include "instruction.hpp"
